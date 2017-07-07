@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<title>annuairePhpSql</title>
+	</head>
+	<body>
+		<main class="container">
+			<form action="index.php" method="POST">
+				<div class="form-group row">
+					<label for="text-input" class="col-2 col-form-label">Nom</label>
+					<input class="form-control" type="text" name="Nom"  id="Nom">
+				</div>
+
+				<div class="form-group row">
+					<label for="text-input" class="col-2 col-form-label">Prénom</label>
+					<input class="form-control" type="text" name="Prenom"  id="Prénom">
+				</div>
+
+				<div class="form-group row">
+					<label for="text-input" class="col-2 col-form-label">Date de naissance</label>
+					<input class="form-control" type="text" name="BirthDate"  id="BirthDate">
+				</div>
+
+				<div class="form-group row">
+					<label for="text-input" class="col-2 col-form-label">Adresse</label>
+					<input class="form-control" type="text" name="Adresse"  id="Adresse">
+				</div>
+
+				<div class="form-group row">
+					<label for="text-input" class="col-2 col-form-label">Téléphone</label>
+					<input class="form-control" type="text" name="Phone"  id="Phone">
+				</div>
+
+				<div class="form-group row">
+					<label for="text-input" class="col-2 col-form-label">Entreprise</label>
+					<input class="form-control" type="text" name="Entreprise"  id="Entreprise">
+				</div>
+
+				<div class="group">
+					<p>
+				      <input type="checkbox" id="family" name="groupName[]" value="famille" />
+				      <label for="family">Famille</label>
+				    </p>
+				    <p>
+				      <input type="checkbox" id="friends" name="groupName[]" value="amis" />
+				      <label for="friends">Friends</label>
+				    </p>
+				    <p>
+				      <input type="checkbox" id="work" name="groupName[]" value="travail" />
+				      <label for="work">Travail</label>
+				    </p>
+					<div class="form-group row">
+						<label for="text-input" class="col-2 col-form-label">Nouveau Groupe</label>
+						<input class="form-control" type="text" name="newNameGroup"  id="newNameGroup">
+					</div>
+								   
+				</div>
+
+
+				<div>
+					<button class="btn waves-effect waves-light" type="submit">Submit</button>
+				</div>
+			</form>
+		</main>
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.js" 
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>         
+	</body>
+</html>
